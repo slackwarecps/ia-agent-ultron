@@ -1,67 +1,64 @@
 import os
+import requests
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 import google.generativeai as genai
 
 load_dotenv()
-raw_key = os.getenv("GOOGLE_API_KEY")
-if raw_key:
-    print(f">>> [SRE CHECK] Chave carregada: {raw_key[:5]}...{raw_key[-4:]}")
-else:
-    print(">>> [SRE CHECK] NENHUMA CHAVE ENCONTRADA NO ENV!")
 
-# Setup Ultron (Gemini 1.5 Flash)
+# Setup Gemini 2.5 Flash
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-
-try:
-    # No seu main.py, altere para um dos nomes que apareceram na sua lista:
-    model = genai.GenerativeModel('gemini-2.5-flash')
-
-    # OU, se quiser a inteligência máxima (mas com um pouco mais de latência):
-    # model = genai.GenerativeModel('gemini-3-pro-preview')
-except Exception as e:
-    print(f">>> [SRE ERROR] Falha ao carregar modelo: {e}")
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 app = Flask(__name__)
+
+# Configurações Rocket.Chat (Vindas do seu .env recuperado)
+RC_URL = os.getenv("ROCKET_URL")
+RC_HEADERS = {
+    "X-Auth-Token": os.getenv("ROCKET_AUTH_TOKEN"),
+    "X-User-Id": os.getenv("ROCKET_USER_ID"),
+    "Content-Type": "application/json"
+}
+
+def notificar_rocketchat(comando):
+    """Envia uma notificação simples para o canal #geral"""
+    url = f"{RC_URL}/api/v1/chat.postMessage"
+    payload = {
+        "channel": "#general",
+        "text": f"📢 **SRE Insight:** Fabão disparou o comando: `{comando}`"
+    }
+    try:
+        requests.post(url, headers=RC_HEADERS, json=payload, timeout=5)
+    except Exception as e:
+        print(f">>> [RC ERROR] Falha ao notificar canal: {e}")
 
 def pensar_e_responder(texto):
     contexto = "Responda de forma técnica, direta e sucinta (máximo 140 caracteres)."
     prompt = f"{contexto}\nComando recebido: {texto}"
-    
     try:
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
-        return f"Erro ao processar no Gemini: {str(e)}"
+        return f"Erro Gemini: {str(e)}"
 
 @app.route('/webhook', methods=['POST'])
 def handle_command():
-    print("\n" + "="*50)
-    print(">>> [SRE LOG] Requisição recebida no Webhook!")
-    
     data = request.get_json(force=True, silent=True)
-    
     if not data or 'comando' not in data:
-        print(">>> [ERRO] Payload inválido.")
         return jsonify({"erro": "Payload inválido."}), 400
 
     comando_texto = data.get('comando')
-    print(f">>> [DEBUG] Processando comando: {comando_texto}")
+    
+    # --- Nova Funcionalidade: Notifica o canal antes de processar ---
+    notificar_rocketchat(comando_texto)
 
-    # Processamento
     resposta_ia = pensar_e_responder(comando_texto)
     
-    # --- LOG DA RESPOSTA NO TERMINAL ---
-    print("-" * 30)
-    print("🤖 RESPOSTA DO ULTRON:")
-    print(resposta_ia)
-    print("-" * 30)
-    print(">>> [SUCESSO] Fluxo finalizado.")
-    print("="*50 + "\n")
+    print(f"\n>>> [LOG] Comando: {comando_texto}")
+    print(f">>> [LOG] Resposta: {resposta_ia}")
 
     return jsonify({
         "status": "sucesso",
-        "usuario": "Ultron",
         "resposta": resposta_ia
     }), 200
 
