@@ -34,3 +34,8 @@ Bash
 ssh -L 5005:localhost:5005 bikini-bottom-server
 Agora, quando você enviar algo para localhost:5005 no Mac, ele cairá direto no container na VPS.
 
+# Configura o nome do bot
+git config --global user.name "Ultron"
+
+# Configura o email oficial
+git config --global user.email "ia-ultron@fabao.eng.br"
