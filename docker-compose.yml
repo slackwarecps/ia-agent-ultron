@@ -1,0 +1,14 @@
+services:
+  ultron-bot:
+    build: .
+    container_name: ultron-engine
+    restart: always
+    env_file: .env
+    ports:
+      - "127.0.0.1:5005:5005" # Acessível apenas localmente na VPS
+    networks:
+      - coolify
+
+networks:
+  coolify:
+    external: true
