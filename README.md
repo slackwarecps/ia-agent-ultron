@@ -39,3 +39,9 @@ git config --global user.name "Ultron"
 
 # Configura o email oficial
 git config --global user.email "ia-ultron@fabao.eng.br"
+
+## REDPLOY
+$ docker compose down && docker compose up -d --build
+
+## ANALISE DOS LOGS
+$ docker logs -f ultron-engine

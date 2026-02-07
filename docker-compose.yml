@@ -6,6 +6,8 @@ services:
     env_file: .env
     ports:
       - "127.0.0.1:5005:5005" # Acessível apenas localmente na VPS
+    environment:    
+      - PYTHONUNBUFFERED=1  # Força o Python a mandar o print na hora
     networks:
       - coolify
 

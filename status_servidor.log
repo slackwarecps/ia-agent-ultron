@@ -1,0 +1,198 @@
+Coletando informações do ambiente da VPS...
+
+==================================================
+  Versão do Sistema Operacional
+==================================================
+Debian GNU/Linux 13 (trixie)
+
+==================================================
+  Recursos do Servidor
+==================================================
+
+--- CPU Info ---
+Cores/Processadores: 2
+Model name:                              AMD EPYC 9354P 32-Core Processor
+
+--- Memória RAM ---
+total        used        free      shared  buff/cache   available
+Mem:           7.8Gi       4.0Gi       1.0Gi       284Mi       3.3Gi       3.8Gi
+Swap:             0B          0B          0B
+
+--- Uso de Disco ---
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           795M  3.2M  792M   1% /run
+/dev/sda1        99G   18G   77G  19% /
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           3.9G  2.9M  3.9G   1% /tmp
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/sda15      124M  8.7M  116M   8% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+tmpfs           795M  4.0K  795M   1% /run/user/1001
+tmpfs           1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/97264b153f69b76de7732e90988489fa588f68c31c424e747417bfe76dc0ed62
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/9c92886b3f1156b41725e95a9474f4d7b2b352c1cab98d47b0858c1d99798517
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/23030701da40a484eec80709e340080abdb2ef135c239a6e075cb05e126ae786
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/5a69d335ed12f39c966444939d9878d9c7474c866e2bce5daa2e7d64f4c13e56
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/0213f598e2ff461d9f12e40fa2fbc73e107ffaa50633ea571fcb5eb4de53a6be
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/03a494d008e5143c50d6e95a8f06324d4e67bdc6be614c809ada0c37a1b5a7fd
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/af7c35226e0198599e8b850f5d22d331f54d9b10605d6711e8a13b640f2bc3d3
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/4ea939ca7ec0d0f12727123b76f655437106b25672baa1841a605fe6fef3cfdf
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/a90ef3d7553b5501f533d2ff83fe6b5ba51d22754d9f65f706d070678cde5f5d
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/181a0cf5b15f0aaca3fc7b81082e699725a1f6afb2500c3a4bc26a66bf0dbbec
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/e3818dad0c20a048217aea0ded54d27634da2fef1c35935924de0f8576d471a5
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/24d56ebbf40e8d37d6c4364d05cf53920d8f12326de269f407c235dbd4cbe2c9
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/3ae01cc3d4d27799fc9b0ecb1be99a7bcdef6f2e87fa0a4d6e29f613f003f238
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/4051685a2a0182de964c52ddbbc13d562e3bdce832288f817f3310c7b91580ab
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/095cfd5a345811a8dfd5170d4f1ee2425f60cc58645e3448e6a0596fc9dea757
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/39d3c9cedbad7230c61a2243101504917e36b1e564c420c8c400529d6efccb54
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/c7b4bc7ec82c32641004f8029605b3ba4c34241100113d9f14a13c359de6d33c
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/a2e08a0d10b642127947345f4756a962cdbafa46609b64390b0405d78f699a01
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/e4d4b75267d6b05e0aee01b07d8174317d4c30d3eea784e4a3e386484d3b4b9f
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/fdd4ca8827f1c9dd50c310407d065b94240357abf94b662cc60188b79f461288
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/96a9cb6443c30c88519c2875eb47c0e6a10f816269d0c78030948e413f9331c5
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/99e4d687f30a7a89cd9147042e4ff579ac02585fb18cb4e94a1d443b1014e0cb
+tmpfs           795M  4.0K  795M   1% /run/user/0
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/c7b8392b7ae60604f6b1b20fb2c547c9895d5d1b4de9ecfdfb740c09c4622de1
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/3474397fd6e2908a87732d3e47b0bd061adde6a7aa1145b321450e627c0d4101
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/8cae3af713cf4bf4d6df38a8452476ce96f751176e386d8b4679cf57e675aee2
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/d1fc1178d778ad0f217dd1e9750e0011e2ff5738d8117fff74780bd9c9229088
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/042e8236202f46805fa20323253731d8cc577d079ff350705f22cccfdb454bad
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/f6ec3b911eb75fe9b759fbe82c357910aebb2ca0322fd3d9100f21f4cb580363
+overlay          99G   18G   77G  19% /var/lib/docker/rootfs/overlayfs/281d81147e8c3970c37379658be137b521e9cc66a294fdc1f15cf31c77a592cc
+
+==================================================
+  Configurações de Rede (Endereços IP)
+==================================================
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UP             195.35.42.89/24 2a02:4780:14:5d7b::1/48 fe80::84e8:d4ff:feb7:6986/64 
+wg0              UNKNOWN        10.7.0.1/24 fddd:2c4:2c4:2c4::1/64 
+br-b403437b20d5  UP             10.0.4.1/24 fe80::8ef:94ff:fe99:e323/64 
+br-231f8583cd62  UP             10.0.5.1/24 fe80::386a:45ff:fe56:5fd9/64 
+br-704d7eaf6454  UP             10.0.7.1/24 fe80::8452:c3ff:fed4:6aa4/64 
+br-bd2357366ecb  UP             10.0.6.1/24 fe80::c43d:76ff:fe79:1aa2/64 
+br-14afcf63627f  UP             10.0.8.1/24 fe80::d0d1:73ff:feb8:2387/64 
+br-ac026c34ae1d  UP             10.0.1.1/24 fde0:21a0:1af8::1/64 fe80::e446:13ff:fe21:1525/64 
+br-59e7a1842dfd  UP             10.0.2.1/24 fe80::b8f9:11ff:fef8:6776/64 
+docker0          UP             10.0.0.1/24 fe80::bcd9:23ff:fe4b:9670/64 
+veth466c787@if2  UP             fe80::4c0a:63ff:fec5:3ae8/64 
+veth18b0fda@if2  UP             fe80::7c6f:d4ff:feee:d664/64 
+vethcfc2a9d@if2  UP             fe80::980a:1bff:fe29:d0e6/64 
+veth3d63ed6@if2  UP             fe80::ecdf:8ff:fe8e:1996/64 
+veth2fec835@if2  UP             fe80::dcf1:54ff:fe7d:859e/64 
+vethbf083cb@if2  UP             fe80::6031:5dff:fe2e:e354/64 
+veth3ad5108@if2  UP             fe80::20ab:2eff:fe0b:3dbd/64 
+veth5f24daf@if2  UP             fe80::1816:8dff:fe3a:84f4/64 
+veth64e650b@if2  UP             fe80::d0ce:c5ff:fed6:111f/64 
+veth1d69090@if2  UP             fe80::24a3:cfff:fe88:c847/64 
+vetha9ce4e5@if2  UP             fe80::f0ed:67ff:fea9:173f/64 
+veth945d3c5@if2  UP             fe80::7899:5bff:fe3c:8cec/64 
+vethd93523a@if2  UP             fe80::c8db:e1ff:fe7b:6159/64 
+veth3830a47@if2  UP             fe80::b094:c9ff:fe11:6da9/64 
+vetheafb02f@if2  UP             fe80::bc14:36ff:fe04:8207/64 
+veth2de01ea@if2  UP             fe80::48ce:dff:fed3:9da/64 
+veth45f8417@if2  UP             fe80::8cdb:53ff:fea2:882b/64 
+veth3f97ea3@if2  UP             fe80::b056:28ff:fe07:8fd8/64 
+vethf8a71af@if2  UP             fe80::f486:86ff:fe99:50da/64 
+vethc7a2298@if2  UP             fe80::f40a:17ff:fe99:1b6f/64 
+veth7b49402@if2  UP             fe80::bc6a:24ff:fedb:57b6/64 
+vethea002e8@if3  UP             fe80::3852:70ff:febd:ea0b/64 
+veth2cd61cd@if3  UP             fe80::c083:fdff:fe68:3d9a/64 
+br-94d2f604cb2a  DOWN           10.0.10.1/24 
+veth348b8f5@if2  UP             fe80::80b5:b0ff:fe47:461e/64 
+vetha01a9af@if4  UP             fe80::5cbe:f5ff:fe4c:47/64 
+veth124d811@if6  UP             fe80::ac44:22ff:fedb:306c/64 
+veth53361ed@if7  UP             fe80::3494:16ff:fe08:8410/64 
+veth6dca900@if8  UP             fe80::6079:f0ff:fe55:eb33/64 
+vethec27883@if9  UP             fe80::309d:3eff:feb1:1150/64 
+veth3f95ed6@if2  UP             fe80::a039:12ff:fe18:1c1/64 
+br-feabd083d0c7  UP             10.0.17.1/24 fe80::e4e7:37ff:fe2a:cf66/64 
+vethb66577d@if2  UP             fe80::e851:b0ff:feaf:aa9b/64 
+veth479ce38@if10 UP             fe80::e8af:87ff:fe10:41bb/64 
+br-c60c975537e9  UP             10.0.3.1/24 fe80::ac5e:2bff:fe80:5c3f/64 
+veth9540338@if2  UP             fe80::f41d:c6ff:fef2:da53/64 
+veth14547cd@if3  UP             fe80::dc9e:72ff:fe56:a538/64 
+vethaa11359@if11 UP             fe80::a4e2:7dff:febc:6e18/64 
+br-400e7236d77f  UP             10.0.9.1/24 fe80::f868:12ff:fe2e:3e98/64 
+veth25e60fe@if2  UP             fe80::5c82:4bff:fe45:9a7c/64 
+veth5ab1e82@if2  UP             fe80::a0e1:25ff:fecd:f5f5/64 
+veth6621f37@if12 UP             fe80::6084:c2ff:fee0:7abb/64 
+veth13a1884@if2  UP             fe80::a810:39ff:fea3:1dac/64
+
+==================================================
+  Configurações de Rede (Servidores DNS)
+==================================================
+# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
+# Do not edit.
+#
+# This file might be symlinked as /etc/resolv.conf. If you're looking at
+# /etc/resolv.conf and seeing this text, you have followed the symlink.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "resolvectl status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs should typically not access this file directly, but only
+# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a
+# different way, replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search .
+
+Nota: Para ver os domínios configurados no Coolify, é melhor consultar a UI do Coolify,
+pois eles são gerenciados pelo proxy reverso (ex: Traefik) e não pela configuração de rede do host.
+
+==================================================
+  Contêineres Docker Ativos
+==================================================
+NAMES                                   IMAGE                                                               STATUS
+okww00c8488c84sgwg000gks-131026497084   okww00c8488c84sgwg000gks:111b458fabc7af609a675887c7e72c38a2ef2ce7   Up 36 minutes (healthy)
+wordpress-mk8wg0wkwk44w0cks0ks4wo0      wordpress:latest                                                    Up About an hour (healthy)
+mariadb-mk8wg0wkwk44w0cks0ks4wo0        mariadb:11                                                          Up About an hour (healthy)
+web-m4kkwsw8skcogw8o04ggkwws            nginx:alpine                                                        Up 12 hours
+filebrowser-zkgwc4kwwokcgswc8w0w0ok4    filebrowser/filebrowser:latest                                      Up 14 hours (healthy)
+coolify-sentinel                        ghcr.io/coollabsio/sentinel:0.0.18                                  Up 14 hours (healthy)
+coolify-proxy                           traefik:v3.6                                                        Up 44 hours (healthy)
+rocketchat_app                          registry.rocket.chat/rocketchat/rocket.chat:latest                  Up 44 hours
+rocketchat_db                           bitnami/mongodb:latest                                              Up 44 hours
+frps-server                             snowdreamtech/frps:latest                                           Up 44 hours
+l888w04ss8cosw04ok80c44w-002949491616   l888w04ss8cosw04ok80c44w:b82a28d62800a9ea8a669a3b2a335c4b41e96e37   Up 44 hours
+bsk4sccos04sc48gkwskwg48-231848796973   bsk4sccos04sc48gkwskwg48:03ed6c0825ef6a107f2d6b4b1026bc42502579bf   Up 44 hours
+lww448k4c4gkcw8kc4kcg00s-231135711076   lww448k4c4gkcw8kc4kcg00s:22f8988e5a5def7881ec4dafac859f5bf2170f07   Up 44 hours
+dozzle-nskw4c080wcsokg4s4oowg0w         amir20/dozzle:latest                                                Up 44 hours (healthy)
+lss4wg808kos00ok8skss8oc-184753252287   lss4wg808kos00ok8skss8oc:f12ae699017315e3048467f16ff5e07604b90460   Up 44 hours
+no0ooggg0sogw84wgwgo40wk-174110906924   no0ooggg0sogw84wgwgo40wk:111b458fabc7af609a675887c7e72c38a2ef2ce7   Up 44 hours
+zo8o0ww84g8sk8koo88oksk4-171811185842   zo8o0ww84g8sk8koo88oksk4:af18a232c50ce658004d80707d10e0a4b0e12922   Up 44 hours
+portainer-pscgs4c4wwgo040cggssgwkg      portainer/portainer-ce:alpine                                       Up 44 hours (healthy)
+mock-patrick-zckgsc4owc4scok08g4wk8go   mockoon/cli:latest                                                  Up 44 hours
+coolify                                 ghcr.io/coollabsio/coolify:4.0.0-beta.462                           Up 44 hours (healthy)
+coolify-redis                           redis:7-alpine                                                      Up 44 hours (healthy)
+coolify-db                              postgres:15-alpine                                                  Up 44 hours (healthy)
+coolify-realtime                        ghcr.io/coollabsio/coolify-realtime:1.0.10                          Up 44 hours (healthy)
+pocketbase-xgsccg0s4o04k84kokc4g008     ghcr.io/coollabsio/pocketbase:latest                                Up 44 hours (healthy)
+minio-uckcc4g4sow0sssw8socsogw          ghcr.io/coollabsio/minio:RELEASE.2025-10-15T17-29-55Z               Up 44 hours (healthy)
+jcs8kgsk40swo0g0w4c00k0w-144735553849   fabioalvaro/fabio-img-nginx:latest                                  Up 44 hours
+r4s8gcggg8g8o0s4os0808gg-220809084437   r4s8gcggg8g8o0s4os0808gg:latest                                     Up 44 hours
+db-dev-postgres_dev-1                   7cd12b4b4bf0                                                        Up 44 hours
+kswcggkw0kgkcks0ksgsoo0s                7cd12b4b4bf0                                                        Up 44 hours (healthy)
+
+==================================================
+  Status do Firewall (UFW)
+==================================================
+Não foi possível determinar o status do firewall. Verifique a saída abaixo:
+--------------------
+Erro ao executar 'sudo ufw status':\nsudo: ufw: command not found
+--------------------
+
+
+Relatório gerado com sucesso!
